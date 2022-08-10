@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(250, 253, 252);
+	background-color: rgb(22, 15, 34);
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -14,12 +14,13 @@ body {
 .headtitle {
 	font-family: 'Oleo Script Swash Caps', cursive;
 	font-weight: 400;
-	-webkit-text-fill-color: rgb(113, 175, 183);
-	-webkit-text-stroke: .7px;
+	-webkit-text-fill-color: rgba(113, 175, 183, 0);
+	-webkit-text-stroke: 1px;
 	font-size: 133px;
 	padding-left: 88px;
-	filter: drop-shadow(0px 2px 2px #ffffff);
-	color: rgb(25, 156, 186);
+	filter: drop-shadow(0px 0px 3px #ffffff);
+	color: rgb(149, 228, 149);
+	-webkit-filter: drop-shadow(0px 0px 3px #ffffff);
 }
 
 
@@ -39,16 +40,17 @@ body {
 	margin-right: 8px;
 	height: 55px;
 	width: 47%;
+	color: rgb(132, 201, 168);
 	font-size: 18px;
 	font-weight: 600;
-	padding: 12px;
-	border: 1px solid rgb(123, 148, 220);
-	background-color: rgb(232, 246, 255);
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+	padding: 12px 18px;
+	border: 1.3px solid rgb(96, 47, 181);
+	background-color: rgba(232, 246, 255, 0.041);
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
 }
 
 #search:hover {
@@ -87,13 +89,13 @@ body {
 
 
 #btnSearch {
-	width: 44px;
+	width: 50px;
 	padding-bottom: 4px;
 	font-size: 19px;
 	border-radius: 33px;
-	color: rgb(65, 114, 187);
-	border: 1px solid rgb(123, 148, 220);
-	background-color: rgb(232, 246, 255);
+	color: rgb(146, 125, 193);
+	border: 1px solid rgb(96, 47, 181);
+	background-color: rgba(232, 246, 255, 0.041);
 	aspect-ratio: 1/1;
 	-webkit-border-radius: 33px;
 	-moz-border-radius: 33px;
@@ -130,20 +132,22 @@ body {
 
 .results {
 	margin-top: 55px;
+	margin-bottom: 77px;
 }
 
 
 .card {
-	background-color: rgb(251, 255, 255);
+	background-color: rgb(20, 16, 27);
 	border: none;
-	margin: 11px;
+	border-radius: 5px;
+	margin: 15px;
 	padding: 18px;
-	box-shadow: 0px 7px 22px #7e979637;
+	box-shadow: 0px 4px 25px #823cfc9d;
 	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	-o-border-radius: 2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 
@@ -161,4 +165,38 @@ body {
 	font-weight: 500;
 	font-size: 22px;
 	color: rgb(100, 115, 121);
+}
+
+
+
+.footer {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background-color: rgb(17, 17, 17);
+
+	background-position: bottom;
+	background-size: 15px 33px;
+	background-repeat: repeat-x;
+}
+
+#footerdivleft {
+	width: 100%;
+	text-align: right;
+	color: rgb(140,
+			135,
+			176);
+	font-weight: 300;
+	font-size: 18px;
+}
+
+#footeravatar {
+	width: 66px;
+}
+
+#footerdivright {
+	width: 100%;
+	text-align: left;
+	color: rgb(140, 135, 176);
+	font-weight: 300;
+	font-size: 18px;
 }
