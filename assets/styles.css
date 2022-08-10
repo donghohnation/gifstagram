@@ -142,7 +142,7 @@ body {
 	border-radius: 5px;
 	margin: 15px;
 	padding: 18px;
-	box-shadow: 0px 4px 25px #823cfc9d;
+	box-shadow: 0px 4px 25px #823cfccf;
 	border-radius: 2px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -164,7 +164,7 @@ body {
 	margin: 24px 2px;
 	font-weight: 500;
 	font-size: 22px;
-	color: rgb(100, 115, 121);
+	color: rgb(143, 191, 201);
 }
 
 
