@@ -23,10 +23,34 @@ body {
 	-webkit-filter: drop-shadow(0px 0px 3px #ffffff);
 }
 
+@media (max-width: 1096px) {
+	.headtitle {
+		font-size: 99px;
+	}
+}
 
-/* #searchlabel {
-	font-size: 22px;
-} */
+@media (max-width: 756px) {
+	.headtitle {
+		font-size: 93px;
+		padding: 0px;
+		text-align: center;
+	}
+	.searchdiv {
+		text-align: center;
+		padding-right: 0px;
+		
+	}
+	.form {
+		text-align: center;
+		margin-top: 53px;
+	}
+}
+
+@media (max-width: 420px) {
+	.headtitle {
+		font-size: 77px;
+	}
+}
 
 .searchdiv {
 	margin: auto;
