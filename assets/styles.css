@@ -3,9 +3,12 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.lightmode {
+	background-color: rgb(250, 253, 252);
+}
+
 
 .headrow {
-	/* background-color: blue; */
 	margin-top: 55px;
 	margin-bottom: 77px;
 }
@@ -19,8 +22,19 @@ body {
 	font-size: 133px;
 	padding-left: 88px;
 	filter: drop-shadow(0px 0px 3px #ffffff);
-	color: rgb(149, 228, 149);
 	-webkit-filter: drop-shadow(0px 0px 3px #ffffff);
+}
+
+#link {
+	text-decoration: none;
+	color: rgb(149, 228, 149);
+}
+
+.lightmode .headtitle {
+	-webkit-text-fill-color: rgb(113, 175, 183);
+	-webkit-text-stroke: .7px;
+	filter: drop-shadow(0px 2px 2px #ffffff);
+	color: rgb(25, 156, 186);
 }
 
 @media (max-width: 1096px) {
@@ -35,11 +49,13 @@ body {
 		padding: 0px;
 		text-align: center;
 	}
+
 	.searchdiv {
 		text-align: center;
 		padding-right: 0px;
-		
+
 	}
+
 	.form {
 		text-align: center;
 		margin-top: 53px;
@@ -56,8 +72,9 @@ body {
 	margin: auto;
 	text-align: right;
 	padding-right: 88px;
-
 }
+
+
 
 
 #search {
@@ -75,6 +92,11 @@ body {
 	-moz-border-radius: 7px;
 	-ms-border-radius: 7px;
 	-o-border-radius: 7px;
+}
+
+.lightmode #search {
+	border: 1px solid rgb(123, 148, 220);
+	background-color: rgb(232, 246, 255);
 }
 
 #search:hover {
@@ -127,6 +149,12 @@ body {
 	-o-border-radius: 33px;
 }
 
+.lightmode #btnSearch {
+	color: rgb(65, 114, 187);
+	border: 1px solid rgb(123, 148, 220);
+	background-color: rgb(232, 246, 255);
+}
+
 #btnSearch:hover {
 	background-color: rgb(252, 222, 70);
 	border: 1px solid rgb(255, 170, 0);
@@ -174,6 +202,10 @@ body {
 	-o-border-radius: 5px;
 }
 
+.lightmode .card {
+	background-color: rgb(251, 255, 255);
+	box-shadow: 0px 7px 22px #7e979637;
+}
 
 .image {
 	border-radius: 2px;
@@ -191,17 +223,24 @@ body {
 	color: rgb(143, 191, 201);
 }
 
+.lightmode .caption {
+	color: rgb(100, 115, 121);
+}
 
 
 .footer {
 	padding-top: 30px;
 	padding-bottom: 40px;
 	background-color: rgb(17, 17, 17);
-
 	background-position: bottom;
 	background-size: 15px 33px;
 	background-repeat: repeat-x;
 }
+
+.lightmode .footer {
+	background-color: rgba(218, 227, 235, 0.225);
+}
+
 
 #footerdivleft {
 	width: 100%;
