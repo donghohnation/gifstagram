@@ -37,14 +37,14 @@ function init() {
 				cards[i].style.visibility = "visible";
 			}
 		}
-		let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=9&q=`;
+		let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=12&q=`;
 		let str = document.getElementById("search").value.trim();
 		url = url.concat(str);
 		console.log(url);
 		fetch(url)
 			.then(response => response.json())
 			.then(content => {
-				for (var i = 0; i < 10; i++) {
+				for (var i = 0; i < 13; i++) {
 					console.log(content.data);
 					console.log("META", content.meta);
 					document.getElementById("gif" + (i + 1)).src = content.data[i].images.downsized.url;
