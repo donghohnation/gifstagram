@@ -1,6 +1,11 @@
 body {
 	background-color: rgb(22, 15, 34);
 	font-family: 'Source Sans Pro', sans-serif;
+	transition: ease-in-out .1s;
+	-webkit-transition: ease-in-out .1s;
+	-moz-transition: ease-in-out .1s;
+	-ms-transition: ease-in-out .1s;
+	-o-transition: ease-in-out .1s;
 }
 
 .lightmode {
