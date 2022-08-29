@@ -1,17 +1,26 @@
-
-
-
-document.getElementById("toggle").addEventListener("click", lightmode);
-
-function lightmode() {
+document.addEventListener("DOMContentLoaded", function () {
 	let body = document.body;
-	body.classList.toggle("lightmode");
-};
+	const theme = localStorage.getItem("theme", "dark");
+	const lightModeToggle = document.getElementById("toggle");
 
+	if (theme === "dark") {
+		body.classList.remove("dark");
+		body.classList.add("lightmode");
+		theme === "light";
+	} else {
+		body.classList.remove("lightmode");
+	}
 
+	lightModeToggle.addEventListener("click", function () {
+		body.classList.toggle("lightmode");
 
-
-
+		if (body.classList.contains("dark")) {
+			localStorage.setItem("theme", "dark");
+		} else {
+			localStorage.setItem("theme", "light");
+		}
+	});
+});
 
 
 
